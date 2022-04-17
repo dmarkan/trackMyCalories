@@ -46,6 +46,10 @@ window.onload = () => {
 unosKalorija.addEventListener("change", () => {
 let unosKalorijaVrednost = document.getElementById("unosKalorija").value;
     switch (day) {
+        case 0:
+            nedHead.innerHTML = "Nedelja" + "<br>" + fullDate;
+            poljeNed.innerHTML = parseInt(poljeNed.innerHTML) + parseInt(unosKalorijaVrednost);
+            break;
         case 1:
             ponHead.innerHTML = "Ponedeljak" + "<br>" + fullDate;
             poljePon.innerHTML = parseInt(poljePon.innerHTML) + parseInt(unosKalorijaVrednost);
@@ -69,10 +73,6 @@ let unosKalorijaVrednost = document.getElementById("unosKalorija").value;
                 case 6:
                 subHead.innerHTML = "Subota" + "<br>" + fullDate;
                 poljeSub.innerHTML = parseInt(poljeSub.innerHTML) + parseInt(unosKalorijaVrednost);
-                break;
-                case 7:
-                nedHead.innerHTML = "Nedelja" + "<br>" + fullDate;
-                poljeNed.innerHTML = parseInt(poljeNed.innerHTML) + parseInt(unosKalorijaVrednost);
                 break;
         default:
             break;
