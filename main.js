@@ -47,31 +47,31 @@ unosKalorija.addEventListener("change", () => {
 let unosKalorijaVrednost = document.getElementById("unosKalorija").value;
     switch (day) {
         case 0:
-            nedHead.innerHTML = "Nedelja" + "<br>" + fullDate;
+            nedHead.innerHTML = "Sunday" + "<br>" + fullDate;
             poljeNed.innerHTML = parseInt(poljeNed.innerHTML) + parseInt(unosKalorijaVrednost);
             break;
         case 1:
-            ponHead.innerHTML = "Ponedeljak" + "<br>" + fullDate;
+            ponHead.innerHTML = "Monday" + "<br>" + fullDate;
             poljePon.innerHTML = parseInt(poljePon.innerHTML) + parseInt(unosKalorijaVrednost);
             break;
                 case 2:
-                utoHead.innerHTML = "Utorak" + "<br>" + fullDate;
+                utoHead.innerHTML = "Tuesday" + "<br>" + fullDate;
                 poljeUto.innerHTML = parseInt(poljeUto.innerHTML) + parseInt(unosKalorijaVrednost);
                 break;  
                 case 3:
-                sreHead.innerHTML = "Sreda" + "<br>" + fullDate;
+                sreHead.innerHTML = "Wednesday" + "<br>" + fullDate;
                 poljeSre.innerHTML = parseInt(poljeSre.innerHTML) + parseInt(unosKalorijaVrednost);
                 break;  
                 case 4:
-                cetHead.innerHTML = "Četvrtak" + "<br>" + fullDate;
+                cetHead.innerHTML = "Thursday" + "<br>" + fullDate;
                 poljeCet.innerHTML = parseInt(poljeCet.innerHTML) + parseInt(unosKalorijaVrednost);
                 break;  
                 case 5:
-                petHead.innerHTML = "Petak" + "<br>" + fullDate;
+                petHead.innerHTML = "Friday" + "<br>" + fullDate;
                 poljePet.innerHTML = parseInt(poljePet.innerHTML) + parseInt(unosKalorijaVrednost);
                 break;  
                 case 6:
-                subHead.innerHTML = "Subota" + "<br>" + fullDate;
+                subHead.innerHTML = "Saturday" + "<br>" + fullDate;
                 poljeSub.innerHTML = parseInt(poljeSub.innerHTML) + parseInt(unosKalorijaVrednost);
                 break;
         default:
